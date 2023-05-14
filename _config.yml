@@ -9,7 +9,7 @@
 locale                   : "zh-CN"
 title                    : "Wanqian Yang"
 title_separator          : "-"
-name                     : &name "Wanqian Yan"
+name                     : &name "Wanqian Yang"
 description              : &description "A young man with a simple dream."
 url                      : https://yangwanqian.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
