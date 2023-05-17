@@ -1,7 +1,7 @@
 ---
 title: "Fault Diagnosis Methods Based on Machine Learning and its Applications for Wind Turbines: A Review"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/2021-10-28Fault Diagnosis Methods Based on Machine Learning and its Applications for Wind Turbines A Review
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2021-10-28
 venue: 'IEEE Access (Volume: 9)'
