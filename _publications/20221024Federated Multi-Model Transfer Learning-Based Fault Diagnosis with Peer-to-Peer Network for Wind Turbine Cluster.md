@@ -17,7 +17,7 @@ citation: '@article{yang2022federated,
   publisher={MDPI}
 }'
 ---
-This paper is about the number 2. The number 3 is left for future work.
+In this paper, a peer-to-peer network is constructed with one node corresponding to one wind turbine in a cluster. Each node is equivalent and functional replicable with a new federated transfer learning method, including model transfer based on multi-task learning and model fusion based on dynamic adaptive weight adjustment.
 
 [Download paper here](https://www.mdpi.com/2075-1702/10/11/972)
 
