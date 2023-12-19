@@ -13,7 +13,7 @@ Education
 ======
 * B.S. in Mechanical Design manufacture and Automation, Harbin Institute of Technology, 2019
 * M.S. in Mechanical Engineering, Harbin Institute of Technology, 2023
-#* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in Power Engineering and engineering Thermophysics, Harbin Institute of Technology, 2027(expected)
 
 Work experience
 ======
