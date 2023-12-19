@@ -8,5 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-This is Wanqian Yang's home on the web!
+This is Wanqian Yang's home on the web, who is with a simple dream.
 
