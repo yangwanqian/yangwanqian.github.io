@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Wanqian Yang"
-  avatar           : "./photo_ywq.jpg"
+  avatar           : "./images/photo_ywq.jpg"
   bio              : "A young man with a simple dream."
   location         : "Shenzhen, China"
   employer         :
