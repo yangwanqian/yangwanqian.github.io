@@ -5,7 +5,7 @@ export const profile = {
   affiliation: 'Harbin Institute of Technology',
   location: 'Shenzhen, China',
   email: 'hityangwanqian@126.com',
-  avatar: '/images/photo_ywq.jpg',
+  avatar: 'https://raw.githubusercontent.com/yangwanqian/yangwanqian.github.io/master/images/photo_ywq.jpg',
   bio: 'Ph.D. candidate working on intelligent condition monitoring, predictive maintenance, industrial big data, and structural health monitoring for wind turbines.',
   researchInterests: [
     'Wind turbine condition monitoring',
