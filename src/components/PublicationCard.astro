@@ -1,0 +1,19 @@
+---
+const { publication } = Astro.props;
+const { data, slug } = publication;
+---
+
+<article class="card">
+  <h3><a href={`/publications/${slug}/`}>{data.title}</a></h3>
+  <p>{data.authors.join(', ')}</p>
+  <div class="meta">
+    {data.venue && <span>{data.venue}</span>}
+    <span>{data.year}</span>
+    {data.status && <span>{data.status}</span>}
+  </div>
+  {data.tags?.length > 0 && (
+    <div class="tag-list">
+      {data.tags.map((tag) => <span class="tag">{tag}</span>)}
+    </div>
+  )}
+</article>
