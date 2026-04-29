@@ -1,0 +1,19 @@
+---
+const { project } = Astro.props;
+const { data, slug } = project;
+---
+
+<article class="card">
+  <h3><a href={`/projects/${slug}/`}>{data.title}</a></h3>
+  {data.title_cn && <p><strong>{data.title_cn}</strong></p>}
+  <div class="meta">
+    {data.period && <span>{data.period}</span>}
+    {data.role && <span>{data.role}</span>}
+  </div>
+  <slot />
+  {data.tags?.length > 0 && (
+    <div class="tag-list">
+      {data.tags.map((tag) => <span class="tag">{tag}</span>)}
+    </div>
+  )}
+</article>
