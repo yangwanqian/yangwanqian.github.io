@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const notes = (await getCollection('notes'))
+  .filter((note) => !note.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout title="Notes">
+  <section class="section">
+    <p class="eyebrow">Research Notes</p>
+    <h1>Notes</h1>
+    <p class="subtitle">Technical notes, literature summaries, and research logs.</p>
+  </section>
+
+  <section class="section list">
+    {notes.map((note) => (
+      <article class="card">
+        <h3><a href={`/notes/${note.slug}/`}>{note.data.title}</a></h3>
+        <div class="meta"><span>{note.data.date.toISOString().slice(0, 10)}</span></div>
+        {note.data.description && <p>{note.data.description}</p>}
+        <div class="tag-list">
+          {note.data.tags.map((tag) => <span class="tag">{tag}</span>)}
+        </div>
+      </article>
+    ))}
+  </section>
+</BaseLayout>
