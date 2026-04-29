@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PublicationCard from '../../components/PublicationCard.astro';
+import { getCollection } from 'astro:content';
+
+const publications = (await getCollection('publications')).sort((a, b) => b.data.year - a.data.year);
+---
+
+<BaseLayout title="Publications">
+  <section class="section">
+    <p class="eyebrow">Research Output</p>
+    <h1>Publications</h1>
+    <p class="subtitle">Journal papers, conference papers, preprints, patents, and software outputs.</p>
+  </section>
+
+  <section class="section list">
+    {publications.map((publication) => <PublicationCard publication={publication} />)}
+  </section>
+</BaseLayout>
