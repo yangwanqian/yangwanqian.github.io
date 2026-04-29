@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { profile } from '../data/profile';
+---
+
+<BaseLayout title="CV">
+  <article class="prose">
+    <p class="eyebrow">Curriculum Vitae</p>
+    <h1>CV</h1>
+
+    <h2>Education</h2>
+    <ul>
+      <li>Ph.D. in Power Engineering and Engineering Thermophysics, Harbin Institute of Technology, expected 2027.</li>
+      <li>M.S. in Mechanical Engineering, Harbin Institute of Technology, 2023.</li>
+      <li>B.S. in Mechanical Design, Manufacturing and Automation, Harbin Institute of Technology, 2019.</li>
+    </ul>
+
+    <h2>Research Interests</h2>
+    <ul>
+      {profile.researchInterests.map((item) => <li>{item}</li>)}
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, PyTorch, machine learning, deep learning, graph neural networks.</li>
+      <li>SCADA data analytics, vibration signal processing, condition monitoring, health-index construction.</li>
+      <li>OpenFAST, ROSCO, AeroDyn, BeamDyn, wind turbine aeroelastic simulation.</li>
+      <li>Abaqus, XFEM/cohesive modeling, structural health monitoring, crack propagation analysis.</li>
+    </ul>
+
+    <h2>Links</h2>
+    <ul>
+      <li><a href={profile.links.googleScholar}>Google Scholar</a></li>
+      <li><a href={profile.links.researchGate}>ResearchGate</a></li>
+      <li><a href={profile.links.orcid}>ORCID</a></li>
+      <li><a href={profile.links.github}>GitHub</a></li>
+    </ul>
+  </article>
+</BaseLayout>
