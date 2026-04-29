@@ -4,6 +4,14 @@ I think I've got things running smoothly and fixed some major bugs, but feel fre
 
 ### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
 
+
+## Personal maintenance (recommended workflow)
+
+For this forked personal site, follow `docs/content-workflow.md` for a simplified "add files in fixed format" process.
+
+- Workflow doc: `docs/content-workflow.md`
+- Ready-to-copy templates: `content-templates/`
+
 # Instructions
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
